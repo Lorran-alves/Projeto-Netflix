@@ -1,314 +1,302 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    padding: 0;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-
-   
-    background:url("../imagens/WhatsApp\ Image\ 2022-04-20\ at\ 19.42.10.jpeg") no-repeat  ;
-    background-size: cover;
-    position: absolute; 
+min-width: 1000px;
+min-height: 600px;
 }
 
-#container{
-
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 1366px;
-    height:656px;
-    position: absolute;
-    margin-top: 0px;
-}
-
-#menu-centro{
-
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 250px;
-    height: 400px;
-    margin: 0 auto;
-    margin-top: 57px;
-    padding-left: 20px;
-}
-.entrar{
-
-    margin-bottom: 5px;
-}
-/**conteudo da caixa***/
-
- #formulario input.questionario{
-
-    padding: 10px 30px 10px 15px ;
-    margin-top: 20px;
-    background-color: #474747;
-    font-size: 11px;
-    border: none;
-    border-bottom: 2px solid orange;
-    width: 160px;
-    margin: 10px auto 0 auto;
-    border-radius: 3px;
-
-   
-}
-.logo img{
-
-    position: absolute;
-    width: 150px;
-    margin-top: 20px;
-    margin-left: 20px;
-   
-
- font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
- 
-}
-.conteudo-menu{
-
-    padding-top: 30px;
-    padding-left: 12px;
-
-}
-
-
-span.sub-titulo{
-
-    font-size: 9px;
-    color: orange;
-    display: block;
-    margin-top: 5px;
-}
-
-
-
-h2{
+input{
     color: white;
 }
 
 a{
     text-decoration: none;
-    font-size: 10px;
+}
+
+#container{
+    background: url("../imagens/WhatsApp\ Image\ 2022-04-20\ at\ 19.42.10.jpeg");
+    background-size: cover;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    min-width: 900px;
+    min-height:600px;
+    max-width: 1350px;
+    max-height: 880px;
+}
+
+#fundo-preto{
+    background: rgba(0, 0, 0,0.5);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-width: 900px;
+    min-height:600px;
+    max-width: 1350px;
+    max-height: 880px;
+}
+
+#logo-netflix{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    position: absolute; 
+    font-size: 35px; 
+    color: red;
+}
+
+/*AREA MENU**/
+#menu-centro{
+    width: 15vw;
+    height: 65vh;
+    background: rgba(0, 0, 0,0.7);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 4%;
+    padding: 3%;
+    padding-top:2% ;
+    min-width: 200px;
+    min-height:250px;
+    max-width: 300px;
+    max-height: 450px;
+}
+
+h2{
     color: white;
-    float: right;
-    margin-right: 30px;
-    margin-top: 10px;
-}
-input.submit{
-
- background-color: red;
- color: white;
- margin-top:20px;
- font-size: 12px;
- width: 210px;
- border: none;
- padding: 10px ;
- border-radius: 4px;
-
-}
-input{
-    color: white;
- 
+    font-size: 2vw;
+    padding-bottom: 1vh;  
 }
 
+.sub-titulo{
+    color: orange;
+    font-size: 55%;
+    padding-left: 2%;
+    padding-top: 0;
+}
+
+input.questionario{
+    padding: 1.3vh 0 1.3vh 0;  
+    background-color: #474747;
+    width: 15vw;
+    border-radius: 3px;
+    border: none;
+    border-bottom: 2px solid orange;
+    margin-top: 2vh;
+    padding-left: 0.5vw;
+    min-width: 200px;
+    min-height:20px;
+    max-width: 250px;
+    max-height: 20px;
+}
 
 input::placeholder{
-
-   
     color: #aca8a8;
+    font-size: 80%;
+    border-radius: 3px;
 }
 
-#displayflex{
+input.submit{
+    padding: 1.3vh 0 1.3vh 0;
+    background-color: red;
+    border-radius: 3px;
+    width: 15.5vw;
+    border: none;
+    margin-top: 4vh;
+    color: white;
+    min-width: 200px;
+    min-height:30px;
+    max-width: 250px;
+    max-height: 400px;
+}
 
+input.submit:hover{
+    cursor:pointer;
+}
+
+.ajuda-precisa {
     display: flex;
-    flex-direction: row;
-    font-size: 9px;
-    color: #aca8a8;
-    margin-top: 10px;
-   align-items: center;
+    color: #606060;
+    font-size: 65%;
+    float: right;
+    margin-left: 0.3px;
+    margin-top: 0.4vh;
 }
-.interesse{
 
-    padding-left: 2px;
 
+#lembrete{
+    display: flex;
+    font-size: 65%;
+    color: #606060;
+    margin-right: 0.3vw;
+    float: left;
 }
-.interesse:hover{
 
+.afastar{
+    margin-top: 1vh;
+}
+
+
+.texto-lembrete{
+
+ padding-top:0.4vh ;
+ padding-left: 0.3vw;
+}
+.texto-lembrete:hover, .caixa-lembrete {
     cursor: pointer;
 }
-.pergunta1{
-    color: #aca8a8;
+
+input.caixa-lembrete{
+    margin-top: 0;  
 }
 
-
-div#area-face{
-
+div#area-face a{
     display: flex;
     flex-direction: row;
-  
-    margin-top: 10px;
-   align-items: center;
-  
+    color: #606060;
+    margin-top: 4vh; 
 }
 .img-face{
-
-    width: 16px;
-    margin-top: -10px;
-
-
+    width: 1.1vw;
+    margin-top: -2vh;
 }
+
 .texto-link{
-
     display: block;
-    margin-top: -15px;
-    margin-left: 25px;
-    font-size: 9px;
-    
+    margin-top: -1.8vh;
+    margin-left:0.4vw ;
+    font-size: 65%;  
 }
-span{
-    color: #aca8a8;
-  
-}
-.pergunta{
 
-    margin-top: 20px;
-    display: block;
-    font-size: 12px;
+#fim-menu{
+    display: flex;
+    flex-direction: row;
 }
-.assinar{
 
-    display: block;
-    margin-top: -15px;
-    margin-bottom: 10px;
-  margin-right: 80px;
+span.pergunta{
+    color: #606060;
+    margin-top: 2vh;
+    font-size: 75%;
+}
+
+span.assinar a{
     color: white;
-    font-size: 13px;
+    margin-top: 2vh;
+    display: flex;
+    font-size: 75%;
 }
-.fim-menu p{
 
-    font-size: 9px;
-    color: #aca8a8;
-    margin-top: 10px;
+.p-menu p{
+    font-size: 55%;
+    color: #606060;
+    margin-top: 2vh;
 }
-.link-fim{
-  
-    display: block;
-    color:blue;
-    margin-top: -1px;
-    margin-right: 5px;
-    
+
+.p-menu a{
+    color: blue;
 }
-/** parte rodape****/
+/**rodape**/
+
 #rodape{
-
-    background-color: rgba(0, 0, 0, 0.8);
-    position: relative;
-    height: 140px;
-    width: 1366px;
-    margin-top: 58px;
-}
-p{
-    color: #aca8a8;
-    font-size: 9px;
-    margin-right: 30px;
-}
-
-
-#flutuar-baixo{
-
+    width: 100%;
+    height: 25%;
+    background: rgba(0, 0, 0,0.7);
+    margin-top: 4%;
     display: flex;
-    float: left;
-    margin-left: 300px;
-    
-}/**primeira parte***/
+}
 .primeiro{
-
-    width: 200px;
-    
-   
+    width: 13vw;
+    margin-left: 23vw;
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 150px;
+    max-height: 150px;
 }
+
 .duvidas{
-
-    font-size: 13px;
-    color: #aca8a8;
-    padding-top: 25px;
+    font-size: 75%;
+    color: #606060;
+    margin-top: 3vh;
     display: flex;
-
 }
-span.alinhar-esq a{
-
-
-    font-size: 11px;
-    margin-top: 25px;
-    margin-right: 93px;
-    color: #aca8a8;
-  
+.duvidas-fre {
+    color: #606060;
+    margin-top: 3vh;
+    display: flex;
+    font-size: 65%;
 }
-  .preferencias a{
-      margin-right: 87px;
-      font-size: 11px;
-      margin-top: 10px;
-      color: #aca8a8;
+
+.preferencias{
+    color: #606060;
+    margin-top: 1vh;
+    display:flex;
+    font-size: 65%;
 }
 
 #selector{
-
-    height: 25px;
-    width: 100px;
-    margin-top: 15px;
+    margin-top: 4vh;
     background-color: #aca8a8;
 }
-option{
+
+.segundo{
+    width: 11vw;
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 150px;
+    max-height: 150px;
+
+}
+
+.central{
     color: #606060;
-
-}
-/**fim primeira***/
-/**inicio segunda***/
-.segunda{
-
-    width: 150px;
-
+    font-size: 65%;
+    margin-top: 8vh;
+    display: flex;
 }
 
-.centro-ajuda a{
-
-    margin-top: 60px;
-    margin-right: 77px;
-    color: #aca8a8;
+.info-corpora{
+    color: #606060;
+    font-size: 65%;
+    margin-top: 1.8vh;
+    display: flex;
 }
-.informacoes-corp a{
 
-    margin-right: 36px;
-    margin-top: 15px;
-    color: #aca8a8;
+.terceiro{
+    width: 11vw;
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 150px;
+    max-height: 150px;
+}  
+
+
+.termo{
+    color: #606060;
+    font-size: 65%;
+    margin-top: 9vh;
+    display: flex;
 }
-/**fim segunda***/
-/**inicio terceira***/
-.terceira{
 
-    width: 150px;
-    
-}
-.termos a{
-
-    margin-top: 60px;
-    margin-right: 40px; 
-    color: #aca8a8;
-}
-/*** fim terceira****/
-/**inicio quarta***/
-.quarta{
-
-    width: 150px;
-    
+.quarto{
+    width: 11vw;
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 150px;
+    max-height: 150px;
 }
 
 
-.privacidade a{
-
-    margin-top: 60px;
-    margin-right: 45px;
-    color: #aca8a8;
+.privacidade{
+    color: #606060;
+    font-size: 65%;
+    margin-top: 9vh;
+    display: flex;
 }
-/**fim quarta***/
-
 
 
 
